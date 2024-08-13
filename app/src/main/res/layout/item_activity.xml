@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item_activity="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    item_activity:cardCornerRadius="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="8dp" >
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/TvItemPhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            tools:srcCompat="@tools:sample/avatars"
+            item_activity:layout_constraintBottom_toBottomOf="parent"
+            item_activity:layout_constraintStart_toStartOf="parent"
+            item_activity:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/TvItemUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            item_activity:layout_constraintBottom_toBottomOf="parent"
+            item_activity:layout_constraintStart_toEndOf="@id/TvItemPhoto"
+            item_activity:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

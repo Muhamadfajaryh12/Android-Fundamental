@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SubmissionAndroidFundamental" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/grape</item>
+    </style>
+    <style name="splashTheme" parent="Theme.Material3.DayNight.NoActionBar"/>
+    <style name="Theme.SubmissionAndroidFundamental" parent="Base.Theme.SubmissionAndroidFundamental" />
+</resources>
